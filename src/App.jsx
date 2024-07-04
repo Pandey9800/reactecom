@@ -1,4 +1,7 @@
 import React from "react";
+// import Component from "./component";
+import Navbar from "./components/navbar";
+import Header from "./components/header";
 
 // const App = () => {
   // return <div>Agar Isko Bana Liya To PP ka Lawada Chusega aur Marwayega Bhi.</div>;
@@ -90,7 +93,7 @@ const App = () => {
   // }
   // addition();
 
-  var a = [43, 4, 3, 34, 34];
+  // var a = [43, 4, 3, 34, 34];
 
   // const b = a.map(function multiply(x) {
   //   return x * 2;
@@ -110,14 +113,18 @@ const App = () => {
   
 //************************************************* Reduce Method **************************************************
 
-  var b = a.reduce((acc, curr) => {
-    return acc + curr
+  // var b = a.reduce((acc, curr) => {
+  //   return acc + curr
     // return curr;
     // return acc;
-  }, 20)
-  console.log(b);
+  // }, 20)
+  // console.log(b);
 
-  return <div>App </div>
+  return <div>
+    App
+    <Navbar />
+    <Header />
+  </div>
 }
 
 
