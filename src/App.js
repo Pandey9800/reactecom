@@ -1,6 +1,6 @@
 import React from "react";
 // import Component from "./component";
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import Header from "./components/header";
 
 // const App = () => {
@@ -121,8 +121,8 @@ const App = () => {
   // console.log(b);
 
   return <div>
-    App
-    <Navbar />
+    {/* App */}
+    {/* <Navbar /> */}
     <Header />
   </div>
 }
