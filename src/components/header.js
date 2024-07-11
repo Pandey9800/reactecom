@@ -8,6 +8,7 @@ const Header = () => {
   // const [value, setValue] = useState("");
   // const [statement, setstatement] = useState(true);
   const [value, setValue] = useState(0);
+  const [statement, setstatement] = useState(true);
   
   const valueHandler = () => {
     setValue(value + 1);
@@ -19,10 +20,10 @@ const Header = () => {
     setValue(value - 1);
   };
 
-  // const statementhandler = () => {
-  //   setstatement(!statement);
-  //   console.log();
-  // };
+  const statementhandler = () => {
+    setstatement(!statement);
+    console.log(statement);
+  };
 
   
   // const a = "Hare Krishna";
@@ -33,13 +34,14 @@ const Header = () => {
     
     useEffect(() => {
       console.log("Changing the Data");
-    });
+    }, [value]);
   
   return (
     <div className={styles.header}>
       <p>This is a Paragraph</p>
       <button onClick={valueHandler}>Addition</button>
       <button onClick={subtracthandler}>Subtract</button>
+      <button onClick={statementhandler}>Click Here</button>
       {/* <h1>{statement}</h1> */}
       {/* <Banner heading={a} /> */}
       <h1>{value}</h1>
